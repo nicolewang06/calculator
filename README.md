@@ -1,1 +1,53 @@
-# calculator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link rel="stylesheet" href="../css/calc.css">
+
+</head>
+<body>
+  <div class="container">
+    <table border="1" cellspacing="0">
+      <tr>
+        <td colspan="4" id="calcView">0</td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="pushBtn(this);">AC</button></td>
+        <td><button onclick="calcAverage();">AVG</button></td>
+        <td><button id="operator" onclick="pushBtn(this);">/</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="pushBtn(this);">7</button></td>
+        <td><button onclick="pushBtn(this);">8</button></td>
+        <td><button onclick="pushBtn(this);">9</button></td>
+        <td><button id="operator" onclick="pushBtn(this);">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="pushBtn(this);">4</button></td>
+        <td><button onclick="pushBtn(this);">5</button></td>
+        <td><button onclick="pushBtn(this);">6</button></td>
+        <td><button id="operator" onclick="pushBtn(this);">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="pushBtn(this);">1</button></td>
+        <td><button onclick="pushBtn(this);">2</button></td>
+        <td><button onclick="pushBtn(this);">3</button></td>
+        <td><button id="operator" onclick="pushBtn(this);">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="pushBtn(this);">0</button></td>
+        <td><button onclick="pushBtn(this);">.</button></td>
+        <td><button id="equal" onclick="pushBtn(this);">=</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="calculator.js">
+
+  </script>
+ 
+</body>
+</html>
